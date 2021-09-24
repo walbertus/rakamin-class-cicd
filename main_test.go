@@ -6,5 +6,5 @@ import (
 )
 
 func TestDummy(t *testing.T) {
-	assert.True(t, true)
+	assert.True(t, false)
 }
