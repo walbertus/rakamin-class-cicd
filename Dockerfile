@@ -3,7 +3,7 @@ FROM golang:1.16.5-alpine3.14 as builder
 RUN mkdir /app
 COPY . /app
 WORKDIR /app
-RUN make build
+RUN go build -v .
 
 FROM alpine:latest
 RUN mkdir /app
